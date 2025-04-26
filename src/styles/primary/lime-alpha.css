@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --accent-a1: #66990005;
+  --accent-a2: #6b95000c;
+  --accent-a3: #96c80029;
+  --accent-a4: #8fc60042;
+  --accent-a5: #81bb0059;
+  --accent-a6: #72aa006e;
+  --accent-a7: #61990087;
+  --accent-a8: #559200ab;
+  --accent-a9: #93e4009c;
+  --accent-a10: #8fdc00b3;
+  --accent-a11: #375f00d0;
+  --accent-a12: #1e2900e3;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --accent-a1: color(display-p3 0.412 0.608 0.02 / 0.02);
+      --accent-a2: color(display-p3 0.514 0.592 0.024 / 0.048);
+      --accent-a3: color(display-p3 0.584 0.765 0.008 / 0.15);
+      --accent-a4: color(display-p3 0.561 0.757 0.004 / 0.24);
+      --accent-a5: color(display-p3 0.514 0.698 0.004 / 0.322);
+      --accent-a6: color(display-p3 0.443 0.627 0 / 0.4);
+      --accent-a7: color(display-p3 0.376 0.561 0.004 / 0.491);
+      --accent-a8: color(display-p3 0.333 0.529 0 / 0.624);
+      --accent-a9: color(display-p3 0.588 0.867 0 / 0.534);
+      --accent-a10: color(display-p3 0.561 0.827 0 / 0.604);
+      --accent-a11: color(display-p3 0.386 0.482 0.227);
+      --accent-a12: color(display-p3 0.222 0.25 0.128);
+    }
+  }
+}

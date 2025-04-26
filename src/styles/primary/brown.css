@@ -1,0 +1,35 @@
+:root, .light, .light-theme {
+  --accent-1: #fefdfc;
+  --accent-2: #fcf9f6;
+  --accent-3: #f6eee7;
+  --accent-4: #f0e4d9;
+  --accent-5: #ebdaca;
+  --accent-6: #e4cdb7;
+  --accent-7: #dcbc9f;
+  --accent-8: #cea37e;
+  --accent-9: #ad7f58;
+  --accent-10: #a07553;
+  --accent-11: #815e46;
+  --accent-12: #3e332e;
+  --accent-contrast: #FFF;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --accent-1: color(display-p3 0.995 0.992 0.989);
+      --accent-2: color(display-p3 0.987 0.976 0.964);
+      --accent-3: color(display-p3 0.959 0.936 0.909);
+      --accent-4: color(display-p3 0.934 0.897 0.855);
+      --accent-5: color(display-p3 0.909 0.856 0.798);
+      --accent-6: color(display-p3 0.88 0.808 0.73);
+      --accent-7: color(display-p3 0.841 0.742 0.639);
+      --accent-8: color(display-p3 0.782 0.647 0.514);
+      --accent-9: color(display-p3 0.651 0.505 0.368);
+      --accent-10: color(display-p3 0.601 0.465 0.344);
+      --accent-11: color(display-p3 0.485 0.374 0.288);
+      --accent-12: color(display-p3 0.236 0.202 0.183);
+      --accent-contrast: color(display-p3 1 1 1);
+    }
+  }
+}

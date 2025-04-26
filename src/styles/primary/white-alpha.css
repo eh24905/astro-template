@@ -1,0 +1,33 @@
+:root {
+  --accent-a1: rgba(255, 255, 255, 0.05);
+  --accent-a2: rgba(255, 255, 255, 0.1);
+  --accent-a3: rgba(255, 255, 255, 0.15);
+  --accent-a4: rgba(255, 255, 255, 0.2);
+  --accent-a5: rgba(255, 255, 255, 0.3);
+  --accent-a6: rgba(255, 255, 255, 0.4);
+  --accent-a7: rgba(255, 255, 255, 0.5);
+  --accent-a8: rgba(255, 255, 255, 0.6);
+  --accent-a9: rgba(255, 255, 255, 0.7);
+  --accent-a10: rgba(255, 255, 255, 0.8);
+  --accent-a11: rgba(255, 255, 255, 0.9);
+  --accent-a12: rgba(255, 255, 255, 0.95);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root {
+      --accent-a1: color(display-p3 1 1 1 / 0.05);
+      --accent-a2: color(display-p3 1 1 1 / 0.1);
+      --accent-a3: color(display-p3 1 1 1 / 0.15);
+      --accent-a4: color(display-p3 1 1 1 / 0.2);
+      --accent-a5: color(display-p3 1 1 1 / 0.3);
+      --accent-a6: color(display-p3 1 1 1 / 0.4);
+      --accent-a7: color(display-p3 1 1 1 / 0.5);
+      --accent-a8: color(display-p3 1 1 1 / 0.6);
+      --accent-a9: color(display-p3 1 1 1 / 0.7);
+      --accent-a10: color(display-p3 1 1 1 / 0.8);
+      --accent-a11: color(display-p3 1 1 1 / 0.9);
+      --accent-a12: color(display-p3 1 1 1 / 0.95);
+    }
+  }
+}
